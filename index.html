@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <script src="js/menu.js"></script>
+    <script src="js/popup_table.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Righteous&display=swap" rel="stylesheet">
+
+    <title>Ресторан MARS</title>
+</head>
+<body>  
+    <div class="header_top">
+        <div class="logo">
+            <a href="#"><img src="img/mars_logo.svg" alt="mars"></a>
+        </div>
+        <div class="txt">
+            <p class="adres">БОЛЬШАЯ ДМИТРЕВКА, 13</p>
+            <a href="tel:+70000000000" class="tel">+7 (000) 000-00-00</a>
+        </div>
+    </div>
+    <div class="header_bottom">
+        <div>
+            <a href="#" class="button_0">ДОСТАВКА</a>
+        </div>
+        <div onclick="openModal()">
+            <a href="#" class="button_1" >ЗАБРОНИРОВАТЬ СТОЛ</a>
+        </div>
+        <div>
+            <a href="#" class="button_2">МЕНЮ</a>
+        </div>
+        <div class="time">
+            <p class="time_txt">ПН-ВС 12:00-00:00</p>
+            <p class="18">ВХОД 18+</p>
+        </div>
+    </div>
+    <div class="gradient">
+        <img src="img/Vectorgradient.svg" alt="gradient">
+    </div>
+    <!-- menu -->
+    <div id="sidebar">
+        <div class="menu-close" onclick="closeMenu()">
+            <img src="img/menu-close.png" alt="#">
+        </div>
+        <div class="table-position">
+            <a href="#" class="table-menu" data-modal-target="#modal">ЗАБРОНИРОВАТЬ СТОЛ</a>
+        </div>      
+            <ul>
+                <li><a href="#"><img src="img/mars_logo.svg" alt="mars-logo"></a></li>
+                <li><a href="#">ГЛАВНАЯ</a></li>
+                <li><a href="#">МЕНЮ</a></li>
+                <li><a href="#">ДОСТАВКА</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            <div class="info-sidebar">
+                <div class="info-blok">
+                    <p class="infa">Номер телефона:</p>
+                    <a href="tel:+70000000000:" class="infa-1">+7 (000) 000-00-00</a>
+                </div>
+                <div class="info-blok">
+                    <p class="infa">Время работы:</p>
+                    <p class="infa-1">пн-вс 12:00-00:00</p>
+                </div>
+                <div class="info-blok">
+                    <p class="infa">Адрес:</p>
+                    <p class="infa-1" >г.Москва, ул.Большая Дмитровка, 13</p>
+                </div>
+            </div>
+        <div class="telega-and-vk">
+            <div class="telegram">
+                <a href="#"><img src="img/telegram.png" alt="telegram"></a>
+            </div>
+            <div class="vk">
+                <a href="#"><img src="img/vk.png" alt="vk"></a>
+            </div>
+        </div>
+    </div>
+    <div class="menu-open" onclick="openMenu()">
+        <img src="img/menu-open.png" alt="#">
+    </div>
+    <div id="bodye"></div>
+
+    <div class="content">
+        <div class="photo">
+            <div class="line-1">
+                <div class="photo-line-1"><img src="img/top-1.png" alt="#"></div>
+                <div class="photo-line-1-top-2"><img src="img/top-2.png" alt="#"></div>
+                <div class="photo-line-1-top"><img src="img/tog.png" alt="#"></div>
+            </div>
+            <div class="line-2">
+                <div class="photo-line-2"><img src="img/dish-1.png" alt="#"></div>
+                <div class="photo-line-2-dish-2"><img src="img/dish-2.png" alt="#"></div>
+                <div class="photo-line-2"><img src="img/dish.png" alt="#"></div>
+            </div>
+            <div class="line-3">
+                <div class="photo-line-3"><img src="img/top-3.png" alt="#"></div>
+                <div class="photo-line-3-dish-4"><img src="img/dish-4.png" alt="#"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-logo"><a><img src="img/mars_logo.svg" alt="#"></a></div>
+        <div class="telegram-vk">
+            <div class="telegram"><a><img src="img/telegram.png" alt="#"></a></div>
+            <div class="vk"><a><img src="img/vk.png" alt="#"></a></div>
+        </div>
+        <div class="footer-info">
+            <div class="header-in-footer">
+                <a href="#">Главная</a>
+                <a class="footer-name-menu" href="#">Меню</a>
+                <a href="#">Доставка</a>
+            </div>
+            <div class="footer-name-info">
+                <p>Адрес</p>
+                <p class="footer-name-number-tel">Номер телефона</p>
+                <p class="footer-name-time">Время работы</p>
+            </div>
+            <div class="footer-content-info">
+                <p>Большая Дмитровка, 13</p>
+                <a class="footer-number-tel" href="tel:+70000000000">+7 (000) 000-00-00</a>
+                <p class="footer-time">ПН-ВС с 12:00 до 00:00</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
